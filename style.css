@@ -1,0 +1,24 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.timeline-item h5 {
+    color: #00bfff;
+}
+.timeline-item ul {
+    margin-top: 0.5rem;
+}
