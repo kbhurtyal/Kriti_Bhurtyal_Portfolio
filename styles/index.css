@@ -1,87 +1,52 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(180deg, #121212, #181818);
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Navbar */
-  .navbar {
-    padding: 1rem 0;
-  }
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  .nav-link:hover {
-    color: #00bfff !important;
-  }
-  
-  /* Hero */
-  .hero {
-    height: 100vh;
-    text-align: center;
-    color: #fff;
-    background: radial-gradient(circle at top, #1c1c1c, #121212);
-    padding-top: 6rem;
-  }
-  .profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 3px solid #00bfff;
-    box-shadow: 0 0 20px rgba(0,191,255,0.5);
-    object-fit: cover;
-    transition: transform 0.3s;
-  }
-  .profile-pic:hover {
-    transform: scale(1.05);
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-  }
-  .hero p {
-    font-size: 1.2rem;
-    color: #ccc;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  /* Buttons */
-  .btn-info {
-    background-color: #00bfff;
-    border: none;
-  }
-  .btn-info:hover {
-    background-color: #009fd8;
-  }
-  .btn-outline-light:hover {
-    background-color: #00bfff;
-    color: #121212;
-  }
-  
-  /* About Section */
-  .about {
-    max-width: 800px;
-  }
-  .about h2 {
-    color: #00bfff;
-    margin-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(0,191,255,0.3);
-  }
-  .about p {
-    color: #cccccc;
-    font-size: 1.1rem;
-  }
-  
-  /* Footer */
-  footer {
-    background: #111;
-    color: #aaa;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+h1, h2, h5 {
+  font-weight: 600;
+}
+
+p {
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background-color: #00adb5;
+  border-color: #00adb5;
+}
+
+.btn-primary:hover {
+  background-color: #01949a;
+}
+
+.btn-outline-info {
+  color: #00adb5;
+  border-color: #00adb5;
+}
+
+.btn-outline-info:hover {
+  background-color: #00adb5;
+  color: #fff;
+}
+
+img.rounded-circle {
+  border: 3px solid #00adb5;
+}
+
+footer {
+  border-top: 1px solid #333;
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  border-radius: 30px;
+}
