@@ -1,52 +1,74 @@
+/* index.css - Home page styles (Portfolio Hybrid) */
+
+/* Root colors for both modes */
+:root{
+  --bg: #f8f9fa;
+  --text: #212529;
+  --muted: #6c757d;
+  --accent: #00adb5;
+  --card: #ffffff;
+  --glass: rgba(255,255,255,0.6);
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-h1, h2, h5 {
-  font-weight: 600;
+/* Dark mode toggled via .theme-dark on <html> or <body> */
+body.theme-dark {
+  --bg: #121212;
+  --text: #e6e6e6;
+  --muted: #bdbdbd;
+  --card: #161616;
+  --glass: rgba(22,22,22,0.6);
+  background: var(--bg);
+  color: var(--text);
 }
 
-p {
-  color: #ccc;
-  line-height: 1.7;
+/* NAVBAR */
+.navbar { background: var(--card) !important; }
+body.theme-dark .navbar { background: #171717 !important; }
+.navbar .navbar-brand { font-family: 'Poppins', sans-serif; color: var(--text); }
+.nav-link { color: var(--muted) !important; }
+.nav-link.active { color: var(--text) !important; }
+
+/* HERO */
+.hero { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-.navbar-brand {
-  font-size: 1.25rem;
-  letter-spacing: 0.5px;
-}
+/* Cards */
+.card { background: var(--card); border: 0; border-radius: 12px; }
+body.theme-dark .card { background: var(--card); border: 1px solid rgba(255,255,255,0.03); }
 
-.btn-primary {
-  background-color: #00adb5;
-  border-color: #00adb5;
-}
+/* Skills list */
+.skill-list { list-style: none; padding: 0; margin: 0; }
+.skill-list li { padding: 6px 0; color: var(--muted); }
 
-.btn-primary:hover {
-  background-color: #01949a;
+/* Project card */
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  border: 1px solid rgba(0,0,0,0.04);
 }
+.project-card:hover { transform: translateY(-6px); transition: transform .25s ease; }
 
-.btn-outline-info {
-  color: #00adb5;
-  border-color: #00adb5;
-}
+/* Footer */
+footer { background: transparent; }
 
-.btn-outline-info:hover {
-  background-color: #00adb5;
-  color: #fff;
-}
-
-img.rounded-circle {
-  border: 3px solid #00adb5;
-}
-
-footer {
-  border-top: 1px solid #333;
-}
-
-.badge {
-  font-size: 0.9rem;
-  padding: 10px 14px;
-  border-radius: 30px;
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero .profile-img { margin-bottom: 1rem; }
 }

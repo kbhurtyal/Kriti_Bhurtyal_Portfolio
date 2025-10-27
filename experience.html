@@ -1,64 +1,83 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Experience | Kriti Bhurtyal</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="styles/experience.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience — Kriti Bhurtyal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/experience.css">
+  <script src="scripts/theme.js" defer></script>
 </head>
-<body class="bg-dark text-light">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Kriti Bhurtyal</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Kriti Bhurtyal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<section class="container my-5 pt-5">
-  <h2 class="text-center mb-4">Internship Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item mb-4">
-      <h5>Software & Data Intern — ScentAir Technologies (May 2023 – Dec 2024)</h5>
-      <ul>
-        <li>Evaluated IoT diffuser event logs & KPIs using Python & Excel, reducing response times by 12%.</li>
-        <li>Automated reporting workflows, cutting manual steps by 25%.</li>
-        <li>Collaborated with cross-functional teams to resolve 15+ integration issues.</li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="timeline-item mb-4">
-      <h5>Data Analytics Intern — Amtev (May 2022 – Jan 2023)</h5>
-      <ul>
-        <li>Built Tableau dashboards tracking marketing KPIs across 5+ campaigns.</li>
-        <li>Developed Python + SQL ETL scripts to consolidate multi-source data.</li>
-        <li>Automated scheduling of social media content, boosting efficiency.</li>
-      </ul>
-    </div>
-    <div class="timeline-item mb-4">
-      <h5>Marketing & Data Analytics Intern — RippleMatch (Jan 2022 – May 2022)</h5>
-      <ul>
-        <li>Analyzed Salesforce and campaign engagement data, improving outreach by 6%.</li>
-        <li>Conducted A/B testing on landing pages, increasing conversion rates.</li>
-        <li>Designed segmented email campaigns acquiring 120+ new users.</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </nav>
 
-<footer class="bg-dark text-center text-light py-3 mt-5">
-  <p>© 2025 Kriti Bhurtyal | Built with Bootstrap & ❤️</p>
-</footer>
+  <main class="container my-5">
+    <h1 class="mb-4">Experience</h1>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h5>Software & Data Intern — ScentAir Technologies</h5>
+          <p class="muted mb-1"><small>May 2023 – Dec 2024</small></p>
+          <ul>
+            <li>Analyzed IoT diffuser logs & KPIs with Python and Excel; reduced system response times by 12%.</li>
+            <li>Built automated pipelines and dashboards — lowered manual reporting by 25%.</li>
+            <li>Partnered across teams to resolve integration issues and improve reliability.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h5>Data Analytics Intern — Amtev</h5>
+          <p class="muted mb-1"><small>May 2022 – Jan 2023</small></p>
+          <ul>
+            <li>Built Tableau dashboards tracking marketing KPIs.</li>
+            <li>Developed Python + SQL ETL scripts to consolidate multi-source data sets.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h5>Marketing & Data Analytics Intern — RippleMatch</h5>
+          <p class="muted mb-1"><small>Jan 2022 – May 2022</small></p>
+          <ul>
+            <li>Analyzed Salesforce and campaign engagement data.</li>
+            <li>Conducted A/B tests and tracked results to measure lift.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1 small">© 2025 Kriti Bhurtyal</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

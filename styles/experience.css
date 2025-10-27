@@ -1,122 +1,15 @@
-/* ===== GLOBAL BASE ===== */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: radial-gradient(circle at top left, #0f0f0f 0%, #1a1a1a 100%);
-    color: #e0e0e0;
-    margin: 0;
-    padding-top: 70px;
-  }
-  
-  /* ===== NAVBAR ===== */
-  .navbar {
-    background: #111 !important;
-    box-shadow: 0 2px 15px rgba(0, 191, 255, 0.1);
-    transition: all 0.3s ease;
-  }
-  .navbar:hover {
-    background: #0d0d0d !important;
-  }
-  .navbar-brand {
-    color: #00bfff !important;
-    font-weight: 600;
-  }
-  .nav-link {
-    color: #ccc !important;
-    transition: color 0.3s ease;
-  }
-  .nav-link:hover {
-    color: #00bfff !important;
-  }
-  
-  /* ===== SECTION HEADER ===== */
-  h2 {
-    color: #00bfff;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 3rem;
-    text-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
-  }
-  
-  /* ===== TIMELINE CONTAINER ===== */
-  .timeline {
-    position: relative;
-    padding-left: 40px;
-    margin: 2rem 0;
-  }
-  .timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(to bottom, #00bfff, transparent);
-    opacity: 0.6;
-  }
-  
-  /* ===== TIMELINE ITEM ===== */
-  .timeline-item {
-    position: relative;
-    margin-bottom: 2.5rem;
-    padding-left: 1rem;
-    transition: all 0.3s ease;
-  }
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -1.4rem;
-    top: 0.3rem;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #00bfff;
-    box-shadow: 0 0 12px rgba(0, 191, 255, 0.7);
-  }
-  .timeline-item:hover {
-    transform: translateX(8px);
-  }
-  .timeline-item h5 {
-    color: #00bfff;
-    font-size: 1.15rem;
-    margin-bottom: 0.75rem;
-    font-weight: 500;
-  }
-  .timeline-item ul {
-    margin: 0;
-    padding-left: 1.2rem;
-    color: #ccc;
-  }
-  .timeline-item li {
-    margin-bottom: 0.5rem;
-    line-height: 1.5;
-    font-size: 0.95rem;
-  }
-  
-  /* ===== FOOTER ===== */
-  footer {
-    background: #0f0f0f;
-    color: #aaa;
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  /* ===== RESPONSIVE ===== */
-  @media (max-width: 768px) {
-    .timeline {
-      padding-left: 25px;
-    }
-    .timeline::before {
-      left: 10px;
-    }
-    .timeline-item::before {
-      left: -1rem;
-    }
-    h2 {
-      font-size: 1.6rem;
-    }
-  }
-  
+/* experience.css - timeline */
+.container { max-width: 900px; }
+
+.timeline { position: relative; padding-left: 20px; }
+.timeline::before {
+  content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: linear-gradient(#00adb5,transparent);
+}
+.timeline-item { margin-bottom: 2rem; position: relative; padding-left: 2.5rem; }
+.timeline-marker {
+  position:absolute; left: -2px; top: 4px; width: 12px; height: 12px; border-radius:50%;
+  background: #00adb5; box-shadow: 0 0 12px rgba(0,173,181,0.25);
+}
+.timeline-item h5 { margin-bottom: .25rem; }
+.timeline-item p.muted { color: #6c757d; }
+.timeline-item ul { margin-top: .5rem; }
